@@ -1,0 +1,16 @@
+.main_controls_StartBtn {
+    width: 145px;
+    height: 55px;
+    margin-right: 25px;
+    background-color: var(--green-main);
+    color: var(--white-color);
+    transition: all 0.2s ease-in-out;
+}
+
+.main_controls_StartBtn:hover {
+    background-color: var(--green-hover);
+}
+
+.main_controls_StartBtn:active {
+    opacity: 0.8;
+}

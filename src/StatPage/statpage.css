@@ -1,0 +1,26 @@
+.statPage_header {
+    display: flex;
+    height: 55px;
+    flex-direction: row;
+    margin-bottom: 30px;
+    justify-content: space-between;
+}
+
+.statPage_title {
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 33px;
+}
+
+.statPage_diagram {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 32px;
+}
+
+.statPage_statParams {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}

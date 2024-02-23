@@ -1,0 +1,69 @@
+.modal_window {
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 100;
+    background: var(--white-color);
+    width: 350px;
+    height: 175px;
+    padding: 25px;
+  }
+
+.modal_overlay {
+    position: fixed;
+    background-color: rgba(0, 0, 0, 0.5);
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 10;
+}  
+
+.modal_content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.modal_header {
+    font-weight: 400;
+    margin-bottom: 25px;
+}
+
+.modal_deleteButton {
+    width: 162px;
+    height: 55px;
+    margin-bottom: 10px;
+    background-color: var(--red-main);
+    color: var(--white-color);
+    font-weight: 500;
+    transition: all 0.2s ease-in-out;
+}
+
+.modal_deleteButton:hover {
+   opacity: 0.8;
+}
+
+.modal_deleteButton:active {
+    background-color: var(--white-color);
+    color: var(--red-main);
+    border: 1px solid var(--red-main);
+}
+
+.modal_cancelButton {
+    font-weight: 300;
+    padding-bottom: 1px;
+    border-bottom: 1px solid var(--black-color);
+    transition: all 0.2s ease-in-out;
+}
+
+.modal_cancelButton:hover {
+    border-bottom: none;
+}
+
+.modal_cancelButton:active {
+    font-weight: 500;
+}
+
+

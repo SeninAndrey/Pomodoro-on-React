@@ -1,0 +1,24 @@
+.icon_container {
+    display: flex;
+    align-items: center;
+}
+
+.icon_container svg path {
+    transition: all 0.2s ease-in-out;
+}
+
+/* 
+.icon_container svg {
+    width: 14px;
+    height: 14px;
+}
+
+.icon_size20 svg {
+    width: 20px;
+    height: 20px;
+}
+
+.icon_size50 svg {
+    width: 50px;
+    height: 50px;
+} */

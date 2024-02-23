@@ -1,0 +1,55 @@
+.statParam {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 179px;
+    width: 405px; 
+    padding: 25px 20px;
+    background-color: var(--input-grey);
+}
+
+.statParam_content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.statParam_title {
+    margin: 0;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 33px;
+    color: var(--black-color);
+}
+
+.statParam_value {
+    font-size: 64px;
+    font-weight: 400;
+    line-height: 64px;
+    color: var(--black-color);
+}
+
+.focus {
+    background-color: #ffdda9;
+}
+
+.pause {
+    background-color: #dfdcfe;
+}
+
+.stops {
+    background-color: #c5f1ff;
+}
+
+.icon-focus-active path{
+    stroke: #ffae35;
+}
+
+.icon-pause-active path{
+    stroke: #9c97d7;
+}
+
+.icon-stops-active path{
+    stroke: #7fc2d7;
+}
+

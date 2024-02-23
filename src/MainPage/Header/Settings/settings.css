@@ -1,0 +1,83 @@
+.settings {
+    align-self: center;
+    position: relative;
+}
+
+.settings_button {
+    margin-right: 20px;
+    color: var(--red-main);
+    font-weight: 400;
+    line-height: 17px;
+    transition: all 0.2s ease-in-out;
+    cursor: pointer;
+}
+
+.settings_button:hover {
+    color: var(--red-hover);
+}
+
+.settings_container {
+    position: absolute;
+    top: 43px;
+    right: -45px;
+    width: 330px;
+    height: auto;
+    padding: 25px 15px;
+    background-color: var(--white-color);
+    box-shadow: 10px 10px 63px 0 rgba(0, 0, 0, 0.07);
+    z-index: 3;
+    animation: settingsOpen 0.3s ease-in-out;
+}
+
+@keyframes settingsOpen {
+    from { 
+        transform: translateY(-30px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+.settings_form {
+    display: flex;
+    flex-direction: column;
+}
+
+.settings_label {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-bottom: 15px;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 17px;
+    color: var(--black-color);
+}
+
+.settings_input {
+    width: 50px;
+    border: none;
+    padding: 4px 5px;
+    margin-right: 5px;
+    background-color: var(--input-grey);
+}
+
+.settings_submitBtn {
+    width: 125px;
+    height: 45px;
+    margin-right: 25px;
+    align-self: center;
+    background-color: var(--green-main);
+    color: var(--white-color);
+    transition: all 0.2s ease-in-out;
+}
+
+.settings_submitBtn:hover {
+    background-color: var(--green-hover);
+}
+
+.settings_submitBtn:active {
+    opacity: 0.8;
+}

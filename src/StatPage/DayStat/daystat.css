@@ -1,0 +1,76 @@
+.dayStat {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 471px;
+    width: 296px;
+}
+
+.dayStat_current {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 260px;
+    padding: 25px;
+    background-color: var(--input-grey);
+}
+
+.dayStat_day {
+    margin-bottom: 14px;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 33px;
+    color: var(--black-color);
+}
+
+.dayStat_description {
+    width: 220px;
+    line-height: 28px;
+    color: var(--black-color);
+}
+
+.dayStat_value {
+    font-weight: 700;
+    color: var(--red-main);
+}
+
+.dayStat_currentDay-tomato {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 179px;
+    background-color: var(--input-grey);
+}
+
+.currentDay_tomatoImg {
+    display: flex;
+    align-items: center;
+    padding-left: 84px;
+    height: 100%;
+    width: 100%;
+    text-align: center;
+    font-size: 24px;
+    font-weight: 700;
+    color: var(--grey-color);
+}
+
+.tomatoImg {
+    padding-right: 5px;
+}
+
+.noTomatoImg {
+    padding-top: 32px;
+}
+
+.currentDay_tomatoText {
+    height: 51px;
+    width: 100%;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 50px;
+    text-align: center;
+    background-color: var(--red-main);
+    color: var(--white-color);
+}

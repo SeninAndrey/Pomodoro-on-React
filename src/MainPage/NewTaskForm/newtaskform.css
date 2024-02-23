@@ -1,0 +1,40 @@
+.form {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 25px;
+}
+
+.form_input {
+    width: 370px;
+    height: 55px;
+    padding: 19px 15px;
+    margin-bottom: 25px;
+    background-color: var(--input-grey);
+    font-weight: 200;
+    border: none;
+}
+
+.form_input::placeholder {
+    color: var(--grey-color);
+}
+
+.submit_btn {
+    width: 173px;
+    height: 55px;
+    background-color: var(--green-main);
+    color: var(--white-color);
+    transition: all 0.2s ease-in-out;
+}
+
+.submit_btn:disabled {
+    opacity: 0.5;
+    cursor: auto;
+}
+
+.submit_btn:hover:enabled {
+    background-color: var(--green-hover);
+}
+
+.submit_btn:active:enabled {
+    opacity: 0.8;
+}

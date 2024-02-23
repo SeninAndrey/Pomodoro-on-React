@@ -1,0 +1,16 @@
+.mainPage_content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.content_left {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 41%;
+}
+
+.content_right {
+    width: 58%;
+}

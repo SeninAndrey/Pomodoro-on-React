@@ -1,0 +1,22 @@
+.main_controls_StopBtn {
+    width: 138px;
+    height: 55px;
+    background-color: inherit;
+    border: 2px solid var(--red-main);
+    color: var(--red-main);
+    transition: all 0.2s ease-in-out;
+}
+
+.main_controls_StopBtn:hover:enabled {
+    background-color: var(--red-main);
+    color: var(--white-color);
+}
+
+.main_controls_StopBtn:disabled {
+    opacity: 0.5;
+    cursor: auto;
+}
+
+.main_controls_StopBtn:active:enabled {
+    opacity: 0.8;
+}

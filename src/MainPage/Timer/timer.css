@@ -1,0 +1,89 @@
+.timerComponent {
+    max-width: 733px;
+    height: 507px;
+    background-color: var(--input-grey);
+}
+
+.timerComponent_header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 55px;
+    padding: 0 40px;
+    background-color: var(--border-grey);
+    color: var(--white-color);
+}
+
+.timerComponent_header-break {
+    background-color: var(--green-main);
+}
+
+.timerComponent_header-work {
+    background-color: var(--red-main);
+}
+
+.timerComponent_main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 70px 0 100px;
+    color: var(--black-color);
+}
+
+.main_timer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.main_time {
+    margin-right: 25px;
+    width: 333px;
+    font-size: 150px;
+    font-weight: 200;
+    line-height: 179px;
+}
+
+.main_time-work {
+    color: var(--red-main);
+}
+
+.main_time-break {
+    color: var(--green-main);
+}
+
+.animation {
+    animation: countdown 1s ease-in-out infinite;
+}
+
+@keyframes countdown {
+    from { 
+        opacity: 1;
+    }
+    to {
+        opacity: 0.5;
+    }
+}
+
+.timer_addMinute svg circle{
+    transition: all 0.2s ease-in-out;
+}
+
+.timer_addMinute:hover svg circle{
+    fill: var(--green-hover);
+}
+
+.timer_addMinute:active {
+    transform: scale(1.05);
+}
+
+.main_current {
+    margin-bottom: 32px;
+}
+
+.current_taskNumber {
+    color: var(--grey-color);
+}
+
