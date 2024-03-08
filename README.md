@@ -1,70 +1,71 @@
-# Getting Started with Create React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
+# Pomodoro timer(React приложение)
 
-In the project directory, you can run:
+### Описание проекта
 
-### `npm start`
+_Метод «Помодоро» — это техника управления временем, разработанная студентом
+колледжа Франческо Чирилло в 1980-х годах. В основе техники, названной от
+итальянского слова «помидор», лежат многочисленные временные интервалы,
+распределённые в течение дня и обозначенные на кухонном таймере в форме помидора,
+который Чирилло использовал сам, когда оттачивал свой метод управления временем._
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- __Основная страница__ с таймером:
+    - Шапка с логотипом, ссылкой на страницу со статистикой, настройками таймера и переключнием на светлую/темную тему оформления страницы
+    - Инструкция по работе с приложением
+    - Форма для добавления задачи
+    - Список задач с возможностью редактирования(добавить,  редактировать, удалить, добавить "помидор")
+    - Таймер с кнопками управления(старт, стоп, пауза, продолжить, пропустить)
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+![](Page1.jpg)
 
-### `npm test`
+- __Страница со статистикой__ использования таймера:
+    - Шапка с логотипом, ссылкой на страницу со таймером, настройками таймера и переключнием на светлую/темную тему оформления страницы
+    - Столбчатая диаграмма времени использвания таймера по дням недели
+    - Выбор недели
+    - Дополнительные метрики по использованию метода(количество остановок, время на паузе, время в "фокусе")
+![](Page2.jpg)
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Макет в Figma - [ссылка](https://www.figma.com/file/E6fg8YJUsz0kunP9Q3zF8o/Pomodoro-(Copy)?type=design&node-id=0-1&mode=design&t=fMEb5VQWVf9NElB3-0)
 
-### `npm run build`
+### Используемый стек
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- React
+- TypeScript
+- Redux
+- React-Router-DOM
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+_Проект собран с использованием готового стартера CreateReactApp_
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### Установка, запуск
 
-### `npm run eject`
+- склонировать репозиторий командой
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+> git clone ...
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+или
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+> git pull ...
+ 
+- установить зависимости в папке проекта
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+> npm install
 
-## Learn More
+- запустить сборку в режиме разработки:
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+> npm start
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+или в режиме продакшена:
 
-### Code Splitting
+> npm run build
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+_в режиме "продакшена" после сборки необходимо запустить сервер командами:_
+> npm install -g serve
+> serve -s build
 
-### Analyzing the Bundle Size
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
 
-### Making a Progressive Web App
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
 
-### Advanced Configuration
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
 
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
